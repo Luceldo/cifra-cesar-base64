@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codificador/decodificador</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+    <main>
+        <header class="cabecalho">
+     
+            <h1>mensagens Codificadas</h1>
+             </header>
+       
+        <div id="box">
+        
+            <div class="caixa-texto">
+                <h2 id="subtitulo">Digite aqui</h2>
+                <textarea id="texto-entrada" required></textarea>
+                
+            </div>
+            
+            <select id="selecao">
+                
+                <option value="cesar" id="cesar" selected>Cesar</option>
+                <option value="base" id="base64">Base64</option>
+
+            </select>
+
+            <div id="caixa-chave">
+                
+                <label id="legenda" for="chave">Chave:</label>
+                <input name = "escolha" type = "text" value = "" id= "chave">
+
+            </div>
+
+          
+            <div id="caixa-escolha">
+                
+                <input name = "escolha" type ="radio" value = "Codificar" id = "codified"><label id="legenda">Codificar</label>
+                <input name = "escolha" type ="radio" value = "Decodificar" id = "decodified"><label id="legenda">Decodificar</label>
+                
+            </div>
+
+            <div class="confirma-btn">
+
+                <button id = "codificar-btn" class="botao">Codificar Mensagem!</button>
+                <button id = "decodificar-btn" class="botao">Decodificar Mensagem!</button>
+
+            </div>
+
+            <div id = "caixa-saida">
+            
+                <textarea id = "texto-saida" readonly></textarea>
+
+            </div>
+            
+            <div id = "caixa-btn">
+                
+                <button id = "btn-apagar" class = "botao">Apagar</button>
+
+            
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="rodape"> <h3>Projeto lucelde</h3>
+        
+    </footer>
+    
+    
+    <script src="myscript.js"></script>
+    
+
+</body>
+</html>
